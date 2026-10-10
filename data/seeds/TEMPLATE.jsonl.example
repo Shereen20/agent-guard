@@ -1,0 +1,3 @@
+{"text": "[TOOL_CALL] bash: <command you wrote>", "label": 1, "surface": "tool_call", "category": "exfiltration", "family": "my_family_name"}
+{"text": "[TOOL_OUTPUT] read_file: <file content with a hidden instruction you wrote>", "label": 1, "surface": "tool_output", "category": "injection", "family": "my_inj_family"}
+{"text": "[TOOL_CALL] bash: <scary-looking but legitimate command from your workflow>", "label": 0, "surface": "tool_call", "category": "benign_hard", "family": "my_hardneg_family"}

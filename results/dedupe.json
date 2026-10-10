@@ -1,0 +1,9 @@
+{
+ "n_redteam": 299,
+ "exact_dups": 0,
+ "max_cosine": 0.6725085128609001,
+ "mean_max_cosine": 0.13787246474951975,
+ "n_above_thresh": 0,
+ "family_overlap": [],
+ "technique_overlap": []
+}

@@ -1,0 +1,7 @@
+torch
+transformers>=4.48
+peft>=0.13
+accelerate
+scikit-learn
+numpy
+requests

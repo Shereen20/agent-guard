@@ -1,0 +1,350 @@
+{
+ "threshold": 0.4213,
+ "train": {
+  "n": 270,
+  "pos": 190,
+  "precision": 0.9737,
+  "recall": 0.9737,
+  "f1": 0.9737,
+  "fpr": 0.0625,
+  "pr_auc": 0.9984,
+  "roc_auc": 0.9961,
+  "tpr_at_1pct_fpr": 0.9421
+ },
+ "train_by_surface": {
+  "multi_step": {
+   "n": 27,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": 0.0
+  },
+  "tool_call": {
+   "n": 186,
+   "recall_on_malicious": 0.959,
+   "fpr_on_benign": 0.079
+  },
+  "tool_output": {
+   "n": 57,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": 0.0
+  }
+ },
+ "train_by_category": {
+  "benign": {
+   "n": 53,
+   "recall_on_malicious": null,
+   "fpr_on_benign": 0.0
+  },
+  "benign_hard": {
+   "n": 27,
+   "recall_on_malicious": null,
+   "fpr_on_benign": 0.185
+  },
+  "ci_supply_chain": {
+   "n": 25,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": null
+  },
+  "destructive": {
+   "n": 30,
+   "recall_on_malicious": 0.833,
+   "fpr_on_benign": null
+  },
+  "exfiltration": {
+   "n": 37,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": null
+  },
+  "injection": {
+   "n": 45,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": null
+  },
+  "laundering": {
+   "n": 22,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": null
+  },
+  "persistence": {
+   "n": 31,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": null
+  }
+ },
+ "train_by_technique": {
+  "none": {
+   "n": 270,
+   "recall_on_malicious": 0.974,
+   "fpr_on_benign": 0.062
+  }
+ },
+ "train_hardneg_fpr": 0.1852,
+ "val": {
+  "n": 47,
+  "pos": 33,
+  "precision": 0.9429,
+  "recall": 1.0,
+  "f1": 0.9706,
+  "fpr": 0.1429,
+  "pr_auc": 0.9946,
+  "roc_auc": 0.987,
+  "tpr_at_1pct_fpr": 0.8788
+ },
+ "val_by_surface": {
+  "multi_step": {
+   "n": 7,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": 0.0
+  },
+  "tool_call": {
+   "n": 31,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": 0.091
+  },
+  "tool_output": {
+   "n": 9,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": 1.0
+  }
+ },
+ "val_by_category": {
+  "benign": {
+   "n": 10,
+   "recall_on_malicious": null,
+   "fpr_on_benign": 0.1
+  },
+  "benign_hard": {
+   "n": 4,
+   "recall_on_malicious": null,
+   "fpr_on_benign": 0.25
+  },
+  "ci_supply_chain": {
+   "n": 4,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": null
+  },
+  "destructive": {
+   "n": 3,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": null
+  },
+  "exfiltration": {
+   "n": 8,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": null
+  },
+  "injection": {
+   "n": 8,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": null
+  },
+  "laundering": {
+   "n": 5,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": null
+  },
+  "persistence": {
+   "n": 5,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": null
+  }
+ },
+ "val_by_technique": {
+  "none": {
+   "n": 47,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": 0.143
+  }
+ },
+ "val_hardneg_fpr": 0.25,
+ "test": {
+  "n": 100,
+  "pos": 61,
+  "precision": 0.6289,
+  "recall": 1.0,
+  "f1": 0.7722,
+  "fpr": 0.9231,
+  "pr_auc": 0.9749,
+  "roc_auc": 0.9512,
+  "tpr_at_1pct_fpr": 0.6393
+ },
+ "test_by_surface": {
+  "tool_call": {
+   "n": 75,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": 0.933
+  },
+  "tool_output": {
+   "n": 25,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": 0.889
+  }
+ },
+ "test_by_category": {
+  "arg_poisoning": {
+   "n": 45,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": null
+  },
+  "benign": {
+   "n": 35,
+   "recall_on_malicious": null,
+   "fpr_on_benign": 0.943
+  },
+  "benign_hard": {
+   "n": 4,
+   "recall_on_malicious": null,
+   "fpr_on_benign": 0.75
+  },
+  "injection": {
+   "n": 16,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": null
+  }
+ },
+ "test_by_technique": {
+  "none": {
+   "n": 100,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": 0.923
+  }
+ },
+ "test_hardneg_fpr": 0.75,
+ "redteam": {
+  "n": 299,
+  "pos": 189,
+  "precision": 0.7354,
+  "recall": 1.0,
+  "f1": 0.8475,
+  "fpr": 0.6182,
+  "pr_auc": 0.9825,
+  "roc_auc": 0.9682,
+  "tpr_at_1pct_fpr": 0.7831
+ },
+ "redteam_by_surface": {
+  "multi_step": {
+   "n": 25,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": 0.667
+  },
+  "tool_call": {
+   "n": 95,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": 0.545
+  },
+  "tool_output": {
+   "n": 179,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": 0.647
+  }
+ },
+ "redteam_by_category": {
+  "arg_poisoning": {
+   "n": 12,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": null
+  },
+  "benign_hard": {
+   "n": 110,
+   "recall_on_malicious": null,
+   "fpr_on_benign": 0.618
+  },
+  "injection": {
+   "n": 111,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": null
+  },
+  "laundering": {
+   "n": 16,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": null
+  },
+  "obfuscation": {
+   "n": 50,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": null
+  }
+ },
+ "redteam_by_technique": {
+  "b64_injection": {
+   "n": 20,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": 1.0
+  },
+  "b64_pipe": {
+   "n": 38,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": 0.75
+  },
+  "benign_looking_flag": {
+   "n": 21,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": 0.0
+  },
+  "env_concat": {
+   "n": 12,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": null
+  },
+  "git_hook": {
+   "n": 7,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": 1.0
+  },
+  "hex_printf": {
+   "n": 12,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": null
+  },
+  "homoglyph": {
+   "n": 20,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": 0.0
+  },
+  "indirect_makefile": {
+   "n": 10,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": 0.5
+  },
+  "indirect_pyscript": {
+   "n": 4,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": null
+  },
+  "markdown_alt": {
+   "n": 20,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": 0.0
+  },
+  "nonenglish_injection": {
+   "n": 68,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": 1.0
+  },
+  "polite_no_keywords": {
+   "n": 20,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": 1.0
+  },
+  "quote_split": {
+   "n": 12,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": null
+  },
+  "split_turns": {
+   "n": 4,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": null
+  },
+  "tool_desc_poison": {
+   "n": 11,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": 1.0
+  },
+  "zero_width": {
+   "n": 20,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": 0.0
+  }
+ },
+ "redteam_hardneg_fpr": 0.6182
+}
