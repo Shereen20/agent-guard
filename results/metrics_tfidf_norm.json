@@ -1,66 +1,66 @@
 {
- "threshold": 0.4213,
+ "threshold": 0.4712,
  "train": {
-  "n": 270,
-  "pos": 190,
-  "precision": 0.9737,
-  "recall": 0.9737,
-  "f1": 0.9737,
-  "fpr": 0.0625,
-  "pr_auc": 0.9984,
-  "roc_auc": 0.9961,
-  "tpr_at_1pct_fpr": 0.9421
+  "n": 350,
+  "pos": 227,
+  "precision": 0.9861,
+  "recall": 0.9383,
+  "f1": 0.9616,
+  "fpr": 0.0244,
+  "pr_auc": 0.9956,
+  "roc_auc": 0.9914,
+  "tpr_at_1pct_fpr": 0.9251
  },
  "train_by_surface": {
   "multi_step": {
-   "n": 27,
+   "n": 39,
    "recall_on_malicious": 1.0,
    "fpr_on_benign": 0.0
   },
   "tool_call": {
-   "n": 186,
-   "recall_on_malicious": 0.959,
-   "fpr_on_benign": 0.079
+   "n": 230,
+   "recall_on_malicious": 0.923,
+   "fpr_on_benign": 0.034
   },
   "tool_output": {
-   "n": 57,
-   "recall_on_malicious": 1.0,
+   "n": 81,
+   "recall_on_malicious": 0.947,
    "fpr_on_benign": 0.0
   }
  },
  "train_by_category": {
   "benign": {
-   "n": 53,
+   "n": 51,
    "recall_on_malicious": null,
    "fpr_on_benign": 0.0
   },
   "benign_hard": {
-   "n": 27,
+   "n": 72,
    "recall_on_malicious": null,
-   "fpr_on_benign": 0.185
+   "fpr_on_benign": 0.042
   },
   "ci_supply_chain": {
-   "n": 25,
-   "recall_on_malicious": 1.0,
+   "n": 31,
+   "recall_on_malicious": 0.968,
    "fpr_on_benign": null
   },
   "destructive": {
-   "n": 30,
-   "recall_on_malicious": 0.833,
+   "n": 36,
+   "recall_on_malicious": 0.722,
    "fpr_on_benign": null
   },
   "exfiltration": {
-   "n": 37,
-   "recall_on_malicious": 1.0,
-   "fpr_on_benign": null
-  },
-  "injection": {
    "n": 45,
    "recall_on_malicious": 1.0,
    "fpr_on_benign": null
   },
+  "injection": {
+   "n": 57,
+   "recall_on_malicious": 0.947,
+   "fpr_on_benign": null
+  },
   "laundering": {
-   "n": 22,
+   "n": 27,
    "recall_on_malicious": 1.0,
    "fpr_on_benign": null
   },
@@ -72,50 +72,62 @@
  },
  "train_by_technique": {
   "none": {
-   "n": 270,
-   "recall_on_malicious": 0.974,
-   "fpr_on_benign": 0.062
+   "n": 350,
+   "recall_on_malicious": 0.938,
+   "fpr_on_benign": 0.024
   }
  },
- "train_hardneg_fpr": 0.1852,
+ "train_by_source": {
+  "llm_draft": {
+   "n": 82,
+   "recall_on_malicious": 0.789,
+   "fpr_on_benign": 0.023
+  },
+  "template": {
+   "n": 268,
+   "recall_on_malicious": 0.968,
+   "fpr_on_benign": 0.025
+  }
+ },
+ "train_hardneg_fpr": 0.0417,
  "val": {
-  "n": 47,
-  "pos": 33,
-  "precision": 0.9429,
-  "recall": 1.0,
-  "f1": 0.9706,
-  "fpr": 0.1429,
-  "pr_auc": 0.9946,
-  "roc_auc": 0.987,
-  "tpr_at_1pct_fpr": 0.8788
+  "n": 60,
+  "pos": 39,
+  "precision": 0.9024,
+  "recall": 0.9487,
+  "f1": 0.925,
+  "fpr": 0.1905,
+  "pr_auc": 0.9796,
+  "roc_auc": 0.9609,
+  "tpr_at_1pct_fpr": 0.7692
  },
  "val_by_surface": {
   "multi_step": {
-   "n": 7,
+   "n": 5,
    "recall_on_malicious": 1.0,
-   "fpr_on_benign": 0.0
+   "fpr_on_benign": null
   },
   "tool_call": {
-   "n": 31,
-   "recall_on_malicious": 1.0,
-   "fpr_on_benign": 0.091
+   "n": 44,
+   "recall_on_malicious": 0.923,
+   "fpr_on_benign": 0.167
   },
   "tool_output": {
-   "n": 9,
+   "n": 11,
    "recall_on_malicious": 1.0,
-   "fpr_on_benign": 1.0
+   "fpr_on_benign": 0.333
   }
  },
  "val_by_category": {
   "benign": {
-   "n": 10,
+   "n": 12,
    "recall_on_malicious": null,
-   "fpr_on_benign": 0.1
+   "fpr_on_benign": 0.0
   },
   "benign_hard": {
-   "n": 4,
+   "n": 9,
    "recall_on_malicious": null,
-   "fpr_on_benign": 0.25
+   "fpr_on_benign": 0.444
   },
   "ci_supply_chain": {
    "n": 4,
@@ -123,12 +135,12 @@
    "fpr_on_benign": null
   },
   "destructive": {
-   "n": 3,
-   "recall_on_malicious": 1.0,
+   "n": 6,
+   "recall_on_malicious": 0.667,
    "fpr_on_benign": null
   },
   "exfiltration": {
-   "n": 8,
+   "n": 6,
    "recall_on_malicious": 1.0,
    "fpr_on_benign": null
   },
@@ -143,119 +155,148 @@
    "fpr_on_benign": null
   },
   "persistence": {
-   "n": 5,
+   "n": 10,
    "recall_on_malicious": 1.0,
    "fpr_on_benign": null
   }
  },
  "val_by_technique": {
   "none": {
-   "n": 47,
-   "recall_on_malicious": 1.0,
-   "fpr_on_benign": 0.143
+   "n": 60,
+   "recall_on_malicious": 0.949,
+   "fpr_on_benign": 0.19
   }
  },
- "val_hardneg_fpr": 0.25,
+ "val_by_source": {
+  "llm_draft": {
+   "n": 11,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": 0.333
+  },
+  "template": {
+   "n": 49,
+   "recall_on_malicious": 0.941,
+   "fpr_on_benign": 0.133
+  }
+ },
+ "val_hardneg_fpr": 0.4444,
  "test": {
-  "n": 100,
-  "pos": 61,
-  "precision": 0.6289,
-  "recall": 1.0,
-  "f1": 0.7722,
-  "fpr": 0.9231,
-  "pr_auc": 0.9749,
-  "roc_auc": 0.9512,
-  "tpr_at_1pct_fpr": 0.6393
+  "n": 132,
+  "pos": 76,
+  "precision": 0.7129,
+  "recall": 0.9474,
+  "f1": 0.8136,
+  "fpr": 0.5179,
+  "pr_auc": 0.9459,
+  "roc_auc": 0.9091,
+  "tpr_at_1pct_fpr": 0.75
  },
  "test_by_surface": {
   "tool_call": {
-   "n": 75,
-   "recall_on_malicious": 1.0,
-   "fpr_on_benign": 0.933
+   "n": 93,
+   "recall_on_malicious": 0.963,
+   "fpr_on_benign": 0.641
   },
   "tool_output": {
-   "n": 25,
-   "recall_on_malicious": 1.0,
-   "fpr_on_benign": 0.889
+   "n": 39,
+   "recall_on_malicious": 0.909,
+   "fpr_on_benign": 0.235
   }
  },
  "test_by_category": {
   "arg_poisoning": {
-   "n": 45,
-   "recall_on_malicious": 1.0,
+   "n": 50,
+   "recall_on_malicious": 0.96,
    "fpr_on_benign": null
   },
   "benign": {
    "n": 35,
    "recall_on_malicious": null,
-   "fpr_on_benign": 0.943
+   "fpr_on_benign": 0.771
   },
   "benign_hard": {
-   "n": 4,
+   "n": 21,
    "recall_on_malicious": null,
-   "fpr_on_benign": 0.75
+   "fpr_on_benign": 0.095
+  },
+  "exfiltration": {
+   "n": 4,
+   "recall_on_malicious": 1.0,
+   "fpr_on_benign": null
   },
   "injection": {
-   "n": 16,
-   "recall_on_malicious": 1.0,
+   "n": 22,
+   "recall_on_malicious": 0.909,
    "fpr_on_benign": null
   }
  },
  "test_by_technique": {
   "none": {
-   "n": 100,
-   "recall_on_malicious": 1.0,
-   "fpr_on_benign": 0.923
+   "n": 132,
+   "recall_on_malicious": 0.947,
+   "fpr_on_benign": 0.518
   }
  },
- "test_hardneg_fpr": 0.75,
+ "test_by_source": {
+  "llm_draft": {
+   "n": 32,
+   "recall_on_malicious": 0.8,
+   "fpr_on_benign": 0.059
+  },
+  "template": {
+   "n": 100,
+   "recall_on_malicious": 0.984,
+   "fpr_on_benign": 0.718
+  }
+ },
+ "test_hardneg_fpr": 0.0952,
  "redteam": {
   "n": 299,
   "pos": 189,
-  "precision": 0.7354,
-  "recall": 1.0,
-  "f1": 0.8475,
-  "fpr": 0.6182,
-  "pr_auc": 0.9825,
-  "roc_auc": 0.9682,
-  "tpr_at_1pct_fpr": 0.7831
+  "precision": 0.9529,
+  "recall": 0.963,
+  "f1": 0.9579,
+  "fpr": 0.0818,
+  "pr_auc": 0.9947,
+  "roc_auc": 0.9907,
+  "tpr_at_1pct_fpr": 0.9101
  },
  "redteam_by_surface": {
   "multi_step": {
    "n": 25,
-   "recall_on_malicious": 1.0,
-   "fpr_on_benign": 0.667
+   "recall_on_malicious": 0.812,
+   "fpr_on_benign": 0.0
   },
   "tool_call": {
    "n": 95,
-   "recall_on_malicious": 1.0,
-   "fpr_on_benign": 0.545
+   "recall_on_malicious": 0.968,
+   "fpr_on_benign": 0.03
   },
   "tool_output": {
    "n": 179,
-   "recall_on_malicious": 1.0,
-   "fpr_on_benign": 0.647
+   "recall_on_malicious": 0.982,
+   "fpr_on_benign": 0.118
   }
  },
  "redteam_by_category": {
   "arg_poisoning": {
    "n": 12,
-   "recall_on_malicious": 1.0,
+   "recall_on_malicious": 0.833,
    "fpr_on_benign": null
   },
   "benign_hard": {
    "n": 110,
    "recall_on_malicious": null,
-   "fpr_on_benign": 0.618
+   "fpr_on_benign": 0.082
   },
   "injection": {
    "n": 111,
-   "recall_on_malicious": 1.0,
+   "recall_on_malicious": 0.982,
    "fpr_on_benign": null
   },
   "laundering": {
    "n": 16,
-   "recall_on_malicious": 1.0,
+   "recall_on_malicious": 0.812,
    "fpr_on_benign": null
   },
   "obfuscation": {
@@ -268,16 +309,16 @@
   "b64_injection": {
    "n": 20,
    "recall_on_malicious": 1.0,
-   "fpr_on_benign": 1.0
+   "fpr_on_benign": 0.0
   },
   "b64_pipe": {
    "n": 38,
    "recall_on_malicious": 1.0,
-   "fpr_on_benign": 0.75
+   "fpr_on_benign": 0.042
   },
   "benign_looking_flag": {
    "n": 21,
-   "recall_on_malicious": 1.0,
+   "recall_on_malicious": 0.833,
    "fpr_on_benign": 0.0
   },
   "env_concat": {
@@ -288,7 +329,7 @@
   "git_hook": {
    "n": 7,
    "recall_on_malicious": 1.0,
-   "fpr_on_benign": 1.0
+   "fpr_on_benign": 0.0
   },
   "hex_printf": {
    "n": 12,
@@ -303,11 +344,11 @@
   "indirect_makefile": {
    "n": 10,
    "recall_on_malicious": 1.0,
-   "fpr_on_benign": 0.5
+   "fpr_on_benign": 0.0
   },
   "indirect_pyscript": {
    "n": 4,
-   "recall_on_malicious": 1.0,
+   "recall_on_malicious": 0.25,
    "fpr_on_benign": null
   },
   "markdown_alt": {
@@ -318,12 +359,12 @@
   "nonenglish_injection": {
    "n": 68,
    "recall_on_malicious": 1.0,
-   "fpr_on_benign": 1.0
+   "fpr_on_benign": 0.0
   },
   "polite_no_keywords": {
    "n": 20,
-   "recall_on_malicious": 1.0,
-   "fpr_on_benign": 1.0
+   "recall_on_malicious": 0.833,
+   "fpr_on_benign": 0.0
   },
   "quote_split": {
    "n": 12,
@@ -346,5 +387,12 @@
    "fpr_on_benign": 0.0
   }
  },
- "redteam_hardneg_fpr": 0.6182
+ "redteam_by_source": {
+  "redteam": {
+   "n": 299,
+   "recall_on_malicious": 0.963,
+   "fpr_on_benign": 0.082
+  }
+ },
+ "redteam_hardneg_fpr": 0.0818
 }
